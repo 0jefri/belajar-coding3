@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title>FILM RATING</title>
+    </head>
+    <body>
+        <script>
+           let usia = prompt("MASUKAN USIA ANDA :")
+           let ratingFilm = "";
+
+           switch(true){
+           	case usia >= 21:
+           		ratingFilm = "DEWASA";
+           		break;
+           	case usia >= 13:
+           		ratingFilm = "REMAJA";
+           		break;
+           	case usia >= 9:
+           		ratingFilm = "BIMBINGAN ORANG TUA";
+           		break;
+           	default:
+           		ratingFilm = "SEMUA USIA";
+           };
+           document.write(`<h1>RATING FILM ADALAH : ${ratingFilm}</h1>`)
+        </script>
+    </body>
+</html>

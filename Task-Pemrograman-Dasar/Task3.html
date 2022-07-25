@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title>KABISAT</title>
+    </head>
+    <body>
+        <script>
+            function kabisat (tahun) {
+            	if ((0 == tahun % 4) && (0 != tahun % 100) || (0 == tahun % 400)) {
+        		document.write(tahun + ' ADALAH TAHUN KABISAT');
+  				  } else {
+       		    document.write(tahun + ' BUKAN TAHUN KABISAT');
+   					 }
+            }
+            const tahun = prompt('MASUKAN TAHUN:');
+
+			kabisat(tahun);
+        </script>
+    </body>
+</html>

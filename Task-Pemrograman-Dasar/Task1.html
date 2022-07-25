@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title>GRADE</title>
+    </head>
+    <body>
+        <script>
+            let sum = prompt("masukan nilai :");
+            let result = "";
+
+            switch(true){
+                case sum >= 90:
+                     result = "A";
+                     break;
+                case sum >= 80 && sum < 90:
+                     result = "B";
+                     break;
+                case sum >= 70 && sum < 80:
+                     result = "C";
+                     break;
+                case sum >= 60 && sum < 70:
+                     result = "D";
+                     break;
+                default:
+                     result = "E";
+            }
+            document.write(`<h1>YOUR POINT IS : ${result}</h1>`);
+        </script>
+    </body>
+</html>
